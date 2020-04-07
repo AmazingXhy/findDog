@@ -21,7 +21,7 @@ function draw() {
     let deltaX = mouseX - dog[0];
     let deltaY = mouseY - dog[1];
     let distance = pow(deltaX * deltaX + deltaY * deltaY, 0.5);
-    let value = map(distance, 0, pow(width*width + height*height, 0.5), 1.5, 0.1);
+    let value = map(distance, 0, pow(width*width + height*height, 0.5), 2, 0.1);
     Sound.setVolume(value);
     console.log("dis:", distance);
     if(abs(mouseX - dog[0]) <= 5 && abs(mouseY - dog[1] <= 5)) {
