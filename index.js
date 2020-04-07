@@ -26,6 +26,7 @@ function draw() {
     console.log("dis:", distance);
     if(abs(mouseX - dog[0]) <= 5 && abs(mouseY - dog[1] <= 5)) {
       Sound.pause();
+      dog = [random(0, width), random(0, height)];
       alert("You find the DOG!");
     }
   } else {
